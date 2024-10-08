@@ -5,7 +5,7 @@ body {
 }
 
 .content {
-  margin: 50px 0;
+  margin: 30px auto;
   text-align: center;
 }
 
@@ -84,3 +84,9 @@ footer {
     width: 100%;
 }
 
+
+.section-container img {
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+}
