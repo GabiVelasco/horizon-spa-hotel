@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.content {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.animate {
+  opacity: 0;
+  transition: all 0.5s ease;
+  will-change: transform, opacity;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.fade-left {
+  transform: translateX(-100%);
+}
+
+.fade-right {
+  transform: translateX(100%);
+}
+
+.fade-up {
+  transform: translateY(100%);
+}
+
+.fade-down {
+  transform: translateY(-100%);
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+section {
+    height: 100vh;
+}
+
+section-container {
+    height: 10vh;
+    display: block;
+}
