@@ -26,7 +26,7 @@ firstSectionElements.forEach(el => observer.observe(el));
 const secondSectionOptions = {
   root: null, // Beobachtet den gesamten Viewport
   rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.5 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
+  threshold: 0.05 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
 };
 
 const secondSectionObserver = new IntersectionObserver((entries) => {
@@ -49,7 +49,7 @@ secondSectionElements.forEach(el => secondSectionObserver.observe(el));
 const thirdSectionOptions = {
   root: null, // Beobachtet den gesamten Viewport
   rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.5 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
+  threshold: 0.05 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
 };
 
 const thirdSectionObserver = new IntersectionObserver((entries) => {
@@ -74,7 +74,7 @@ thirdSectionElements.forEach(el => thirdSectionObserver.observe(el));
 const forthSectionOptions = {
   root: null, // Beobachtet den gesamten Viewport
   rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.5 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
+  threshold: 0.05 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
 };
 
 const forthSectionObserver = new IntersectionObserver((entries) => {
@@ -100,7 +100,7 @@ forthSectionElements.forEach(el => forthSectionObserver.observe(el));
 const fifthSectionOptions = {
   root: null, // Beobachtet den gesamten Viewport
   rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.5 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
+  threshold: 0.05 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
 };
 
 const fifthSectionObserver = new IntersectionObserver((entries) => {

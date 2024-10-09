@@ -99,3 +99,10 @@ footer {
     padding:20px;
     margin: 20px auto;
 }
+
+h1, h2, h3, p, span, a {
+  margin: 20px auto;
+  padding: 20px;
+  letter-spacing: 3px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
