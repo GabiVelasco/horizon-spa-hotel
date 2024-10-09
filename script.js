@@ -92,3 +92,32 @@ const forthSectionObserver = new IntersectionObserver((entries) => {
 const forthSectionElements = document.querySelectorAll('.content:nth-of-type(4) .animate');
 forthSectionElements.forEach(el => forthSectionObserver.observe(el));
 
+
+
+
+
+// Für die dritte Sektion, Threshold auf 0.5 setzen
+const fifthSectionOptions = {
+  root: null, // Beobachtet den gesamten Viewport
+  rootMargin: '0px', // Keine zusätzlichen Margen
+  threshold: 0.5 // 50% des Elements müssen sichtbar sein, um die Animation zu triggern
+};
+
+const fifthSectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show'); // Animation auslösen
+    } else {
+      entry.target.classList.remove('show'); // Animation zurücksetzen, wenn es den Viewport verlässt
+    }
+  });
+}, fifthSectionOptions);
+
+
+// Beobachte die Elemente der zweiten Sektion
+const fifthSectionElements = document.querySelectorAll('.content:nth-of-type(5) .animate');
+fifthSectionElements.forEach(el => fifthSectionObserver.observe(el));
+
+
+
+
