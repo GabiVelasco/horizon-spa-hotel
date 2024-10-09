@@ -7,6 +7,7 @@ body {
 .content {
   margin: 30px auto;
   text-align: center;
+  display: block;
 }
 
 .animate {
@@ -39,7 +40,10 @@ body {
 }
 
 section {
-    height: 100vh;
+    height: fit-content;
+    min-height: 50vh;
+    display: block;
+
 }
 
 section-container {
