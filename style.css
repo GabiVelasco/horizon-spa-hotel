@@ -129,3 +129,79 @@ h1, h2, h3, p, span, a {
   margin: 0 auto;
  }  
 
+.flex-header {
+
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+   -ms-flex-item-align: start;
+  align-items: flex-start;
+  justify-content: left;
+  justify-items: left;
+  align-content: flex-start;
+  left: 0;
+
+}
+
+.logo {
+  width: 5%;
+  height: 5%;
+  margin: 10px; 
+  min-width: 50px;
+  -ms-flex-item-align: start;
+  align-items: flex-start;
+  justify-content: left;
+  justify-items: left;
+  align-content: flex-start;
+}
+
+.h1-header {
+  
+  margin: 0 auto;
+ -ms-flex-item-align: start;
+  align-items: flex-start;
+  justify-content: left;
+  justify-items: left;
+  align-content: flex-start;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 100;
+  left:0;
+  padding: 2px;
+
+
+}
+
+
+.h2-header {
+ 
+  margin: 0 auto;
+ -ms-flex-item-align: start;
+  align-items: flex-start;
+  justify-content: left;
+  justify-items: left;
+  align-content: flex-start;
+  font-size: 15px;
+  text-align: left;
+  font-weight: 100;
+  left:0;
+  padding: 2px;
+  
+
+}
+
+.block-header {
+  display: block;
+  margin: 10px; 
+  padding: 0;
+  height: 40px;
+   -ms-flex-item-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+
+
+}
