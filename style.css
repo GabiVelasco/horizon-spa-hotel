@@ -18,6 +18,8 @@ body {
   margin: 0 auto;
 }
 
+
+
 .fade-left {
   transform: translateX(-100%);
 }
@@ -112,5 +114,7 @@ h1, h2, h3, p, span, a {
 }
 
  iframe {
-  width: 100%;
- }
+  width: 100% !important;
+  margin: 0 auto;
+ }  
+
