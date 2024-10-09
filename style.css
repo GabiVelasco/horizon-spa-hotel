@@ -110,3 +110,7 @@ h1, h2, h3, p, span, a {
   letter-spacing: 3px;
   font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
+ iframe {
+  width: 100%;
+ }
