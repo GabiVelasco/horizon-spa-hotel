@@ -77,16 +77,49 @@ header .logo {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 5px auto;
+    -ms-flex-item-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    display: inline-flex;
+    align-items: center !important;
+    flex-direction: row;
+    width: 100%;
+
+
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-flex;
+    margin: 5px auto;
+    -ms-flex-item-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    align-items: center !important;
+    width: 100%;
+
+
+ 
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    margin: 5px auto;
+    -ms-flex-item-align: center;
+    align-items: center !important;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    display: inline-flex;
+
 }
 
 
@@ -131,9 +164,9 @@ h1, h2, h3, p, span, a {
 
 .flex-header {
 
-  display: flex;
+  display: inline-flex !important;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
    -ms-flex-item-align: start;
   align-items: flex-start;
@@ -154,6 +187,19 @@ h1, h2, h3, p, span, a {
   justify-content: left;
   justify-items: left;
   align-content: flex-start;
+}
+
+.logo2 {
+  margin: 20px auto;
+  margin-top: 40px;
+  -ms-flex-item-align: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+  min-width: 50px;
+
 }
 
 .h1-header {
