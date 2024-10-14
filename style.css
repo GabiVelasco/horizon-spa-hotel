@@ -1,12 +1,12 @@
 body, html {
   font-family: Arial, sans-serif;
-  background-color: #fffdfd;
+  background-color: #D3A079;
   width:100%;
   height: 100%;
   margin: 0 auto;
   padding: 0;
-overflow-x: hidden;
-color: rgb(160, 160, 160);
+  overflow-x: hidden;
+  color: white;
 }
 
 * {
@@ -58,7 +58,8 @@ section {
 }
 
 section-container {
-    height: 10vh;
+    height: fit-content;
+    min-height: 50vh;
     display: block;
 }
 
@@ -100,7 +101,6 @@ nav ul li {
     display: inline-flex;
     margin: 5px auto;
     -ms-flex-item-align: center;
-    align-items: center;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -135,6 +135,11 @@ footer {
     width: 100%;
     margin: 0 auto;
     padding: 0;
+    color: black;
+}
+
+footer p {
+  color: black;
 }
 
 
@@ -148,7 +153,7 @@ footer {
 
 .map-container {
     width: 100%;
-    height: 400px; /* Adjust height as needed */
+    height: fit-content; /* Adjust height as needed */
     padding:20px;
     margin: 20px auto;
 }
@@ -166,6 +171,7 @@ h1, h2, h3, p, span, a {
  iframe {
   width: 100% !important;
   margin: 0 auto;
+  height: 800px;
  }  
 
 .flex-header {
