@@ -65,9 +65,12 @@ section-container {
 
 header {
     background: linear-gradient(135deg, #1E88E5, #64B5F6); /* Blau */
+    background:url("img/exotic-spa.jpg");
+    background-size: cover;
     color: white;
-    padding: 10px 0;
+    padding: 0;
     text-align: center;
+    height: 900px;
 }
 
 
@@ -78,7 +81,7 @@ header .logo {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 5px auto;
+    margin: 0 auto;
     -ms-flex-item-align: center;
     justify-content: center;
     justify-items: center;
@@ -88,6 +91,7 @@ nav ul {
     align-items: center !important;
     flex-direction: row;
     width: 100%;
+    background-color: #64b4f677;
 
 
 }
@@ -135,7 +139,7 @@ footer {
 
 
 .section-container img {
-    width: 30%;
+    width: 60%;
     height: auto;
     margin: 10px auto;
     border-radius: 5px;
