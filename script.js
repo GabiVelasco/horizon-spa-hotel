@@ -121,3 +121,17 @@ fifthSectionElements.forEach(el => fifthSectionObserver.observe(el));
 
 
 
+// Simple intersection observer for animations
+document.addEventListener("DOMContentLoaded", function () {
+  let observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+          }
+      });
+  });
+
+  document.querySelectorAll('.animate').forEach((el) => {
+      observer.observe(el);
+  });
+});

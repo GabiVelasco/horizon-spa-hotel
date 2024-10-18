@@ -6,48 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon Hotel Management</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Popup styling */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #ddd;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .popup.active {
+            display: block;
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .popup-overlay.active {
+            display: block;
+        }
+
+        .close-btn {
+            float: right;
+            cursor: pointer;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Gallery styling */
+        .hotel-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .hotel-card {
+            flex-basis: 30%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .hotel-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .hotel-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .hotel-card p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <!-- <div class="flex-header">
-        <img class="logo" src="img/hotelhorizon-logo.png" width="50px;" alt="">
-        <div class="block-header">
-        <h2 class="h2-header">Spa Hotel</h2>
-        <h1 Class="h1-header"> Horizon</h1>
-        </div>
-         </div> -->
         <nav>
             <ul>
-            <li> 
-                <div class="flex-header">
-                <a href=""><img class="logo2" src="img/hotelhorizon-logo.png" width="70px;" alt="">
-                <div class="block-header">
-                <h2 class="h2-header">Spa Hotel</h2>
-                <h1 Class="h1-header"> Horizon</h1>
-                </div>
-                </div>
-                
-                </a>
-            </li>
+                <li>
+                    <div class="flex-header">
+                        <a href=""><img class="logo2" src="img/hotelhorizon-logo.png" width="70px;" alt="">
+                            <div class="block-header">
+                                <h2 class="h2-header">Spa Hotel</h2>
+                                <h1 class="h1-header">Horizon</h1>
+                            </div>
+                        </a>
+                    </div>
+                </li>
                 <li><a href="#about">Über Uns</a></li>
                 <li><a href="#services">Unsere Angebote</a></li>
+                <li><a href="#rooms">Zimmerarten</a></li>
                 <li><a href="#hotels">Hotels</a></li>
-                <li><a href="#contact">Buchen</a></li>
-            </div>
-
-
+                <li><a href="#contact">Kontakt & Buchen</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- About Section -->
-    <section class="content">
+    <section id="about" class="content">
         <div class="section-container">
             <h1 class="animate fade-left">Hotelmanagement mit Leidenschaft</h1>
-            <p class="animate fade-right">Die deutschen, österreichischen und Schweizer Hotelmärkte stehen vor einem
-                nachhaltigen Wachstum.</p>
+            <p class="animate fade-right">Die deutschen, österreichischen und Schweizer Hotelmärkte stehen vor einem nachhaltigen Wachstum.</p>
         </div>
         <div class="section-container">
             <img src="img/hotel-photo2.jpeg" alt="Hotel Management" class="animate fade-left">
@@ -55,69 +116,139 @@
     </section>
 
     <!-- Services Section -->
-    <section class="content">
+    <section id="services" class="content">
         <div class="section-container">
             <h1 class="animate fade-left">Was wir anbieten</h1>
-            <p class="animate fade-right">Sind Sie dabei, ein Hotel zu entwickeln und suchen einen qualifizierten
-                Betreiber?</p>
+            <ul class="animate fade-right">
+                <li>Gratis WLAN</li>
+                <li>Kostenlose Stornierung bis 24 Stunden vor Anreise</li>
+                <li>Frühstücksbuffet inklusive</li>
+                <li>Wellnessbereich mit Pool und Sauna</li>
+                <li>Massageservice auf Anfrage</li>
+                <li>Fitnessraum mit moderner Ausstattung</li>
+                <li>24-Stunden-Rezeption</li>
+                <li>Parkplätze vor Ort verfügbar</li>
+            </ul>
         </div>
         <div class="section-container">
             <img src="img/hotel-photo5.jpeg" alt="Our Services" class="animate fade-left">
         </div>
     </section>
 
-    <!-- Hotels Section -->
-    <section class="content">
+    <!-- Room Types Section -->
+    <section id="rooms" class="content">
+        <div class="section-container">
+            <h1 class="animate fade-left">Unsere Zimmerarten</h1>
+            <ul class="animate fade-right">
+                <li>Deluxe Einzelzimmer - Mit großem Bett und Stadtblick</li>
+                <li>Doppelzimmer - Für zwei Personen mit Kingsize-Bett</li>
+                <li>Familienzimmer - Platz für bis zu vier Personen, mit separatem Wohnbereich</li>
+                <li>Suite - Luxuriöse Ausstattung mit Whirlpool und privatem Balkon</li>
+                <li>Barrierefreies Zimmer - Speziell angepasst für Gäste mit eingeschränkter Mobilität</li>
+            </ul>
+        </div>
+        <div class="section-container">
+            <img src="img/hotel-photo8.jpeg" alt="Room Types" class="animate fade-left">
+        </div>
+    </section>
+
+    <!-- Hotels Section with Gallery -->
+    <section id="hotels" class="content">
         <div class="section-container">
             <h1 class="animate fade-left">Unsere Hotels</h1>
-            <p class="animate fade-right">Hotels sind unser Kerngeschäft. Wir wissen, was sie erfolgreich macht.</p>
-            <p class="animate fade-right">Wir freuen uns über das wachsende Vertrauen der führenden internationalen
-                Hotelgruppen.</p>
-        </div>
-        <div class="section-container">
-            <img src="img/hotel-photo4.jpeg" alt="Hotels" class="animate fade-right">
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="content">
-        <div class="section-container">
-            <h1 class="animate fade-left">Kontakt</h1>
-            <p class="animate fade-right">Haben Sie Fragen? Nehmen Sie Kontakt mit uns auf!</p>
-
-            <div class="section-container">
-                <img src="img/hotel-photo9.jpeg" alt="Hotels" class="animate fade-right">
+            <p class="animate fade-right">Entdecken Sie unsere Hotels an verschiedenen Standorten.</p>
+            <div class="hotel-gallery">
+                <div class="hotel-card">
+                    <img src="img/hotel-berlin.jpeg" alt="Hotel Berlin">
+                    <h3>Hotel Berlin</h3>
+                    <p>Adresse: Kurfürstendamm 14, 10719 Berlin</p>
+                    <p>Telefon: <a href="tel:+493088772500">+49 (0)30 8877-2500</a></p>
+                </div>
+                <div class="hotel-card">
+                    <img src="img/hotel-munich.jpeg" alt="Hotel München">
+                    <h3>Hotel München</h3>
+                    <p>Adresse: Sonnenstraße 25, 80331 München</p>
+                    <p>Telefon: <a href="tel:+498980100500">+49 (0)89 8010-500</a></p>
+                </div>
+                <div class="hotel-card">
+                    <img src="img/hotel-frankfurt.jpeg" alt="Hotel Frankfurt">
+                    <h3>Hotel Frankfurt</h3>
+                    <p>Adresse: Kaiserstraße 74, 60329 Frankfurt</p>
+                    <p>Telefon: <a href="tel:+496926075500">+49 (0)69 2607-5500</a></p>
+                </div>
             </div>
-
-
-            <p>Horizon Hotel GmbH, Kurfürstendamm 14, DE - 10719 Berlin</p>
-            <p>Telefon: +49 (0)30 8877-2500</p>
-            <p>E-Mail: <a href="mailto:info@horizon-hotels.de">info@horizon-hotels.de</a></p>
         </div>
     </section>
 
-
-    <!-- Google Maps Section -->
-    <section class="content">
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="content">
         <div class="section-container">
-            <h1 class="animate fade-left">Unsere Hotels auf der Karte</h1>
-            <p class="animate fade-right">Finde unsere Hotels bequem in deiner Nähe.</p>
-        </div>
-        <div class="map-container">
-            <iframe class="animate fade-up"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241315.0551653914!2d13.088992399999999!3d52.5515699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2e7e5d9c9e5f9%3A0x4c7b173d6c3bcd73!2sBerlin!5e0!3m2!1sde!2sde!4v1634086825314!5m2!1sde!2sde"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
+            <h1 class="animate fade-left">Kontakt & Buchen</h1>
+            <p class="animate fade-right">Haben Sie Fragen? Nehmen Sie Kontakt mit uns auf!</p>
+            <p><strong>Adresse:</strong> Horizon Hotel GmbH, Kurfürstendamm 14, DE - 10719 Berlin</p>
+            <p><strong>Telefon:</strong> <a href="tel:+493088772500">+49 (0)30 8877-2500</a></p>
+            <p><strong>E-Mail:</strong> <a href="mailto:kontakt@horizon-hotels.de">kontakt@horizon-hotels.de</a></p>
+
+            <h2 class="animate fade-left">Jetzt buchen</h2>
+            <button id="booking-btn">Jetzt buchen</button>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Horizon hotel GmbH. Alle Rechte vorbehalten.</p>
-        <p>Impressum | Datenschutz | AGB</p>
-    </footer>
+    <!-- Booking Popup -->
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div class="popup" id="booking-popup">
+        <span class="close-btn" id="close-popup">&times;</span>
+        <h2>Buchungsformular</h2>
+        <form id="booking-form" action="submit-booking.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Datum:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Datum:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room">Zimmerauswahl:</label>
+            <select id="room" name="room" required>
+                <option value="deluxe-einzelzimmer">Deluxe Einzelzimmer</option>
+                <option value="doppelzimmer">Doppelzimmer</option>
+                <option value="familienzimmer">Familienzimmer</option>
+                <option value="suite">Suite</option>
+                <option value="barrierefreies-zimmer">Barrierefreies Zimmer</option>
+            </select>
+
+            <button type="submit">Buchung abschicken</button>
+        </form>
+    </div>
+
+    <script>
+        // Show booking popup
+        const bookingBtn = document.getElementById('booking-btn');
+        const popup = document.getElementById('booking-popup');
+        const popupOverlay = document.getElementById('popup-overlay');
+        const closePopup = document.getElementById('close-popup');
+
+        bookingBtn.addEventListener('click', () => {
+            popup.classList.add('active');
+            popupOverlay.classList.add('active');
+        });
+
+        closePopup.addEventListener('click', () => {
+            popup.classList.remove('active');
+            popupOverlay.classList.remove('active');
+        });
+
+        popupOverlay.addEventListener('click', () => {
+            popup.classList.remove('active');
+            popupOverlay.classList.remove('active');
+        });
+    </script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
