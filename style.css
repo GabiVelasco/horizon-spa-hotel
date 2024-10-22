@@ -72,6 +72,13 @@ nav ul li a {
   font-weight: bolder; 
 }
 
+.list-container i { 
+	list-style-type:none;
+  color:#47B0D2;
+  font-weight: bolder; 
+  padding: 10px;
+}
+
 .flex-header {
   display: flex;
   align-items: center;
