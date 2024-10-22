@@ -6,14 +6,27 @@ body {
   color: #333;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-color: #004a77;
-  padding: 10px;
+  padding: 0;
   background:url("img/exotic-spa.jpg");
   background-size: cover;
   color: white;
   text-align: center;
   height: 900px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  top: 0;
+
+
 
 }
 
@@ -22,8 +35,10 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #00497794;
   padding:10px;
+  margin: 0 auto;
+  list-style-type: none;
+
 
 }
 
@@ -31,6 +46,10 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
+}
+
+li { 
+	list-style-type:none;
 }
 
 .flex-header {
