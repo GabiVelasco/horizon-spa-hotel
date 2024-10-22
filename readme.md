@@ -1,3 +1,6 @@
+### README.md
+
+```markdown
 # Hotel Gallery
 
 ![Hotel Gallery Banner](img/hotel-photo.jpeg) <!-- Replace with an actual image link if needed -->
