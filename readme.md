@@ -1,8 +1,3 @@
-Here’s an enhanced version of your README with improved styling, formatting, and some additional sections to make it more visually appealing and informative:
-
-### README.md
-
-```markdown
 # Hotel Gallery
 
 ![Hotel Gallery Banner](img/hotel-photo.jpeg) <!-- Replace with an actual image link if needed -->
