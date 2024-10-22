@@ -68,26 +68,52 @@
 </section>
 
 
-    <!-- Room Types Section -->
-    <section id="rooms" class="content">
-        <div class="section-container blue">
-            <h1 class="animate fade-left">Unsere Zimmerarten</h1>
-            <div class="list-container">
-
+   <!-- Room Types Section -->
+<section id="rooms" class="content">
+    <div class="section-container blue">
+        <h1 class="animate fade-left">Unsere Zimmerarten</h1>
+        <div class="list-container">
             <ul class="animate fade-right">
-                <li>Deluxe Einzelzimmer - Mit großem Bett und Stadtblick</li>
-                <li>Doppelzimmer - Für zwei Personen mit Kingsize-Bett</li>
-                <li>Familienzimmer - Platz für bis zu vier Personen, mit separatem Wohnbereich</li>
-                <li>Suite - Luxuriöse Ausstattung mit Whirlpool und privatem Balkon</li>
-                <li>Barrierefreies Zimmer - Speziell angepasst für Gäste mit eingeschränkter Mobilität</li>
+                <li class="room-item" data-room="deluxe-einzelzimmer">
+                    <i class="fas fa-bed"></i> Deluxe Einzelzimmer - Mit großem Bett und Stadtblick
+                </li>
+                <li class="room-item" data-room="doppelzimmer">
+                    <i class="fas fa-user-friends"></i> Doppelzimmer - Für zwei Personen mit Kingsize-Bett
+                </li>
+                <li class="room-item" data-room="familienzimmer">
+                    <i class="fas fa-users"></i> Familienzimmer - Platz für bis zu vier Personen, mit separatem Wohnbereich
+                </li>
+                <li class="room-item" data-room="suite">
+                    <i class="fas fa-crown"></i> Suite - Luxuriöse Ausstattung mit Whirlpool und privatem Balkon
+                </li>
+                <li class="room-item" data-room="barrierefreies-zimmer">
+                    <i class="fas fa-wheelchair"></i> Barrierefreies Zimmer - Speziell angepasst für Gäste mit eingeschränkter Mobilität
+                </li>
             </ul>
         </div>
     </div>
 
-        <div class="section-container">
-            <img src="img/hotel-photo8.jpeg" alt="Room Types" class="animate fade-left">
-        </div>
-    </section>
+    <div class="section-container">
+        <img src="img/hotel-photo8.jpeg" alt="Room Types" class="animate fade-left">
+    </div>
+
+    <!-- Room Detail Popup -->
+    <div class="popup-overlay" id="room-popup-overlay"></div>
+    <div class="popup" id="room-popup">
+        <span class="close-btn" id="close-room-popup">&times;</span>
+        <h2 id="room-title">Zimmerdetails</h2>
+        <div id="room-gallery" class="room-gallery"></div>
+        <p id="room-description"></p>
+        <label for="cancellation-option">Kostenlose Stornierung:</label>
+        <select id="cancellation-option">
+            <option value="no">Keine</option>
+            <option value="yes">Ja, 24 Stunden vorher</option>
+        </select>
+        <p>Preis: <span id="room-price"></span></p>
+        <button id="book-room-btn">Jetzt Buchen</button>
+    </div>
+</section>
+
 <!-- Hotels Section with Gallery -->
 <section id="hotels" class="content">
     <div class="section-container">
