@@ -1,137 +1,24 @@
-// Intersection Observer Options
+// Unified Intersection Observer Options
 const options = {
-  root: null, // Beobachtet den gesamten Viewport
-  rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.0005 // 5% des Elements müssen sichtbar sein, um die Animation zu triggern für die erste Sektion
+  root: null, // Observing the entire viewport
+  rootMargin: '0px', // No extra margins
+  threshold: [0.005, 0.5] // 0.5% to 50% of the element needs to be visible to trigger
 };
 
+// Create a single IntersectionObserver
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('show'); // Animation auslösen
+      entry.target.classList.add('visible'); // Add class to trigger animation
     } else {
-      entry.target.classList.remove('show'); // Animation zurücksetzen, wenn es den Viewport verlässt
+      entry.target.classList.remove('visible'); // Remove class to reset animation
     }
   });
 }, options);
 
-// Alle zu beobachtenden Elemente auswählen
+// Select all elements with the 'animate' class
 const animElements = document.querySelectorAll('.animate');
 
-// Behandle die erste Sektion separat
-const firstSectionElements = document.querySelectorAll('.content:first-of-type .animate');
-firstSectionElements.forEach(el => observer.observe(el));
+// Observe each element with the 'animate' class
+animElements.forEach(el => observer.observe(el));
 
-// Für die zweite Sektion, Threshold auf 0.5 setzen
-const secondSectionOptions = {
-  root: null, // Beobachtet den gesamten Viewport
-  rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.0005 // 5% des Elements müssen sichtbar sein, um die Animation zu triggern für die erste Sektion
-};
-
-const secondSectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show'); // Animation auslösen
-    } else {
-      entry.target.classList.remove('show'); // Animation zurücksetzen, wenn es den Viewport verlässt
-    }
-  });
-}, secondSectionOptions);
-
-// Beobachte die Elemente der zweiten Sektion
-const secondSectionElements = document.querySelectorAll('.content:nth-of-type(2) .animate');
-secondSectionElements.forEach(el => secondSectionObserver.observe(el));
-
-
-
-// Für die dritte Sektion, Threshold auf 0.5 setzen
-const thirdSectionOptions = {
-  root: null, // Beobachtet den gesamten Viewport
-  rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.0005 // 5% des Elements müssen sichtbar sein, um die Animation zu triggern für die erste Sektion
-};
-
-const thirdSectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show'); // Animation auslösen
-    } else {
-      entry.target.classList.remove('show'); // Animation zurücksetzen, wenn es den Viewport verlässt
-    }
-  });
-}, thirdSectionOptions);
-
-
-// Beobachte die Elemente der zweiten Sektion
-const thirdSectionElements = document.querySelectorAll('.content:nth-of-type(3) .animate');
-thirdSectionElements.forEach(el => thirdSectionObserver.observe(el));
-
-
-
-
-// Für die dritte Sektion, Threshold auf 0.5 setzen
-const forthSectionOptions = {
-  root: null, // Beobachtet den gesamten Viewport
-  rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.0005 // 5% des Elements müssen sichtbar sein, um die Animation zu triggern für die erste Sektion
-};
-
-const forthSectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show'); // Animation auslösen
-    } else {
-      entry.target.classList.remove('show'); // Animation zurücksetzen, wenn es den Viewport verlässt
-    }
-  });
-}, forthSectionOptions);
-
-
-// Beobachte die Elemente der zweiten Sektion
-const forthSectionElements = document.querySelectorAll('.content:nth-of-type(4) .animate');
-forthSectionElements.forEach(el => forthSectionObserver.observe(el));
-
-
-
-
-
-// Für die dritte Sektion, Threshold auf 0.5 setzen
-const fifthSectionOptions = {
-  root: null, // Beobachtet den gesamten Viewport
-  rootMargin: '0px', // Keine zusätzlichen Margen
-  threshold: 0.0005 // 5% des Elements müssen sichtbar sein, um die Animation zu triggern für die erste Sektion
-};
-
-const fifthSectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show'); // Animation auslösen
-    } else {
-      entry.target.classList.remove('show'); // Animation zurücksetzen, wenn es den Viewport verlässt
-    }
-  });
-}, fifthSectionOptions);
-
-
-// Beobachte die Elemente der zweiten Sektion
-const fifthSectionElements = document.querySelectorAll('.content:nth-of-type(5) .animate');
-fifthSectionElements.forEach(el => fifthSectionObserver.observe(el));
-
-
-
-
-// Simple intersection observer for animations
-document.addEventListener("DOMContentLoaded", function () {
-  let observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-          }
-      });
-  });
-
-  document.querySelectorAll('.animate').forEach((el) => {
-      observer.observe(el);
-  });
-});
