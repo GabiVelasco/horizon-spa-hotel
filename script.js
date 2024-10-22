@@ -190,10 +190,55 @@ document.getElementById('close-room-popup').addEventListener('click', () => {
 
 // ROOM TYPES DATA ENDE
 
-function openGalleryPopup(src) {
+
+// POPUP GALLLERY
+const galleryImages = [
+  "img/barrierefreies-zimmer1.jpg",
+  "img/barrierefreies-zimmer2.jpg",
+  "img/deluxe-einzelzimmer1.jpg",
+  "img/deluxe-einzelzimmer2.jpg",
+  "img/doppelzimmer1.jpg",
+  "img/doppelzimmer2.jpg",
+  "img/exotic-spa.jpg",
+  "img/familienzimmer1.jpg",
+  "img/familienzimmer2.jpg",
+  "img/familienzimmer3.jpg",
+  "img/hotel-389256_1280.jpg",
+  "img/hotel-6862159_1280.jpg",
+  "img/hotel-7885138_1280.jpg",
+  "img/hotel-photo.jpeg",
+  "img/hotel-photo2.jpeg",
+  "img/hotel-photo3.jpeg",
+  "img/hotel-photo4.jpeg",
+  "img/hotel-photo5.jpeg",
+  "img/hotel-photo6.jpeg",
+  "img/hotel-photo7.jpeg",
+  "img/hotel-photo8.jpeg",
+  "img/hotel-photo9.jpeg",
+  "img/hotel-reception.jpg",
+  "img/lobby-398845_1280.jpg",
+  "img/pool-7245866_1280.jpg",
+  "img/receptionists.jpg",
+  "img/rooms.jpg",
+  "img/suite1.jpg",
+  "img/suite2.jpg",
+  "img/suite3.jpg",
+  "img/villa-1737168_1280.jpg",
+  "img/woman-4373078_1280.jpg"
+];
+
+let currentIndex = 0; // To track the current image index
+
+function openGalleryPopup(index) {
+  if (index < 0 || index >= galleryImages.length) {
+      console.error('Index out of bounds!'); // Error log for invalid index
+      return; // Exit the function if the index is invalid
+  }
+
+  currentIndex = index; // Set the current index to the clicked image
   const popup = document.getElementById('gallery-popup');
   const popupImage = document.getElementById('popup-image');
-  popupImage.src = src; // Set the source of the popup image
+  popupImage.src = galleryImages[currentIndex]; // Set the source of the popup image
   popup.classList.add('active'); // Show the popup
 }
 
@@ -202,3 +247,18 @@ function closeGalleryPopup() {
   popup.classList.remove('active'); // Hide the popup
 }
 
+function changeImage(direction) {
+  currentIndex += direction; // Change the current index based on direction
+  
+  // Loop back to the beginning or end of the gallery
+  if (currentIndex < 0) {
+      currentIndex = galleryImages.length - 1; // Go to the last image
+  } else if (currentIndex >= galleryImages.length) {
+      currentIndex = 0; // Go to the first image
+  }
+
+  const popupImage = document.getElementById('popup-image');
+  popupImage.src = galleryImages[currentIndex]; // Update the popup image source
+}
+
+// POPUP GALLLERY ENDE
