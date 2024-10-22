@@ -189,3 +189,16 @@ document.getElementById('close-room-popup').addEventListener('click', () => {
 
 
 // ROOM TYPES DATA ENDE
+
+function openGalleryPopup(src) {
+  const popup = document.getElementById('gallery-popup');
+  const popupImage = document.getElementById('popup-image');
+  popupImage.src = src; // Set the source of the popup image
+  popup.classList.add('active'); // Show the popup
+}
+
+function closeGalleryPopup() {
+  const popup = document.getElementById('gallery-popup');
+  popup.classList.remove('active'); // Hide the popup
+}
+
