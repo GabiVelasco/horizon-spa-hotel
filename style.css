@@ -376,13 +376,20 @@ button:hover {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .footer-section {
     flex: 1;
     padding: 0 20px;
+    min-width: 25%;
+    
+}
+
+.container-right {
+  text-align: right !important;
+
 }
 
 .footer-section h3 {
@@ -397,6 +404,7 @@ button:hover {
 .social-media {
     display: flex;
     gap: 15px;
+    
 }
 
 .social-media a {
