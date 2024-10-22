@@ -101,7 +101,7 @@ const rooms = {
       description: "Luxuriöse Ausstattung mit Whirlpool und privatem Balkon (bis 4 Personen)",
       basePrice: 300,
       cityViewCost: 20,
-      images: ["img/suite1.jpg", "img/suite2.jpg"],
+      images: ["img/suite1.jpg", "img/suite2.jpg", "img/suite3.jpg"],
       maxGuests: 4,
   },
   "barrierefreies-zimmer": {
