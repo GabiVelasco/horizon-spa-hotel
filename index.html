@@ -69,27 +69,26 @@
     </div>
 </section>
 
-
-   <!-- Room Types Section -->
+<!-- Room Types Section -->
 <section id="rooms" class="content">
     <div class="section-container blue">
         <h1 class="animate fade-left">Unsere Zimmerarten</h1>
         <div class="list-container">
             <ul class="animate fade-right">
                 <li class="room-item" data-room="deluxe-einzelzimmer">
-                    <i class="fas fa-bed"></i> Deluxe Einzelzimmer - Mit großem Bett und Stadtblick
+                    <i class="fas fa-bed"></i> Deluxe Einzelzimmer - Mit großem Bett und Stadtblick (max. 1 Person)
                 </li>
                 <li class="room-item" data-room="doppelzimmer">
-                    <i class="fas fa-user-friends"></i> Doppelzimmer - Für zwei Personen mit Kingsize-Bett
+                    <i class="fas fa-user-friends"></i> Doppelzimmer - Für zwei Personen
                 </li>
                 <li class="room-item" data-room="familienzimmer">
-                    <i class="fas fa-users"></i> Familienzimmer - Platz für bis zu vier Personen, mit separatem Wohnbereich
+                    <i class="fas fa-users"></i> Familienzimmer - Platz für bis zu 6 Personen, mit separatem Wohnbereich
                 </li>
                 <li class="room-item" data-room="suite">
-                    <i class="fas fa-crown"></i> Suite - Luxuriöse Ausstattung mit Whirlpool und privatem Balkon
+                    <i class="fas fa-crown"></i> Suite - Luxuriöse Ausstattung mit Whirlpool und privatem Balkon (bis 4 Personen)
                 </li>
                 <li class="room-item" data-room="barrierefreies-zimmer">
-                    <i class="fas fa-wheelchair"></i> Barrierefreies Zimmer - Speziell angepasst für Gäste mit eingeschränkter Mobilität
+                    <i class="fas fa-wheelchair"></i> Barrierefreies Zimmer - Speziell angepasst für Gäste mit eingeschränkter Mobilität (bis 5 Personen)
                 </li>
             </ul>
         </div>
@@ -106,15 +105,39 @@
         <h2 id="room-title">Zimmerdetails</h2>
         <div id="room-gallery" class="room-gallery"></div>
         <p id="room-description"></p>
-        <label for="cancellation-option">Kostenlose Stornierung:</label>
-        <select id="cancellation-option">
-            <option value="no">Keine</option>
-            <option value="yes">Ja, 24 Stunden vorher</option>
+
+        <label for="hotel-selection">Welches Hotel?</label>
+        <select id="hotel-selection" required>
+            <option value="">Bitte wählen...</option>
+            <option value="hotel-berlin">Hotel Berlin</option>
+            <option value="hotel-munich">Hotel München</option>
+            <option value="hotel-frankfurt">Hotel Frankfurt</option>
         </select>
+
+        <label for="city-view">Stadtblick:</label>
+        <select id="city-view">
+            <option value="no">Nein</option>
+            <option value="yes">Ja, zusätzliche Kosten 20 €</option>
+        </select>
+
+        <label for="guest-count">Anzahl der Personen:</label>
+        <input type="number" id="guest-count" name="guest-count" min="1" required>
+
+        <div id="bed-selection-container" style="display: none;">
+            <label for="bed-selection">Bett-Typ:</label>
+            <select id="bed-selection" required>
+                <option value="double">1 Doppelbett</option>
+                <option value="twin">2 Einzelbetten</option>
+            </select>
+        </div>
+
         <p>Preis: <span id="room-price"></span></p>
         <button id="book-room-btn">Jetzt Buchen</button>
     </div>
 </section>
+
+
+
 
 <!-- Hotels Section with Gallery -->
 <section id="hotels" class="content">
