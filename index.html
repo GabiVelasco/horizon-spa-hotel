@@ -128,36 +128,37 @@
         </div>
     </section>
 
-    <!-- Booking Popup -->
-    <div class="popup-overlay" id="popup-overlay"></div>
-    <div class="popup" id="booking-popup">
-        <span class="close-btn" id="close-popup">&times;</span>
-        <h2>Buchungsformular</h2>
-        <form id="booking-form" action="submit-booking.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<!-- Booking Popup -->
+<div class="popup-overlay" id="popup-overlay"></div>
+<div class="popup" id="booking-popup">
+    <span class="close-btn" id="close-popup">&times;</span>
+    <h2>Buchungsformular</h2>
+    <form id="booking-form" action="submit-booking.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="checkin">Check-in Datum:</label>
-            <input type="date" id="checkin" name="checkin" required>
+        <label for="checkin">Check-in Datum:</label>
+        <input type="date" id="checkin" name="checkin" required>
 
-            <label for="checkout">Check-out Datum:</label>
-            <input type="date" id="checkout" name="checkout" required>
+        <label for="checkout">Check-out Datum:</label>
+        <input type="date" id="checkout" name="checkout" required>
 
-            <label for="room">Zimmerauswahl:</label>
-            <select id="room" name="room" required>
-                <option value="deluxe-einzelzimmer">Deluxe Einzelzimmer</option>
-                <option value="doppelzimmer">Doppelzimmer</option>
-                <option value="familienzimmer">Familienzimmer</option>
-                <option value="suite">Suite</option>
-                <option value="barrierefreies-zimmer">Barrierefreies Zimmer</option>
-            </select>
+        <label for="room">Zimmerauswahl:</label>
+        <select id="room" name="room" required>
+            <option value="deluxe-einzelzimmer">Deluxe Einzelzimmer</option>
+            <option value="doppelzimmer">Doppelzimmer</option>
+            <option value="familienzimmer">Familienzimmer</option>
+            <option value="suite">Suite</option>
+            <option value="barrierefreies-zimmer">Barrierefreies Zimmer</option>
+        </select>
 
-            <button type="submit">Buchung abschicken</button>
-        </form>
-    </div>
+        <button type="submit">Buchung abschicken</button>
+    </form>
+</div>
+
     <script src="script.js"></script>
 
 </body>

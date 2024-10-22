@@ -213,51 +213,113 @@ nav {
   align-items: center;
 }
 
-
-
   nav.hidden {
       top: -300px; /* Navigation hidden */
   }
-  /* Popup styling */
-  .popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-      padding: 20px;
-      background-color: white;
-      border: 2px solid #ddd;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-  }
 
-  .popup.active {
-      display: block;
-  }
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Set a fixed width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    z-index: 1000;
+    animation: fadeIn 0.3s ease; /* Fade in effect */
+}
 
-  .popup-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 999;
-  }
+.popup.active {
+    display: block;
+}
 
-  .popup-overlay.active {
-      display: block;
-  }
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    z-index: 999;
+}
 
-  .close-btn {
-      float: right;
-      cursor: pointer;
-      font-size: 18px;
-      color: #333;
-  }
+.popup-overlay.active {
+    display: block;
+}
+
+.close-btn {
+    float: right;
+    cursor: pointer;
+    font-size: 24px; /* Bigger close button */
+    color: #e74c3c; /* Red color for visibility */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.close-btn:hover {
+    color: #c0392b; /* Darker red on hover */
+}
+
+h2 {
+    margin-top: 0;
+    color: #333; /* Darker title color */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+    margin-top: 10px; /* Spacing above labels */
+    display: block; /* Block display for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 20px); /* Full width with padding */
+    padding: 10px; /* Padding for inputs */
+    margin: 5px 0 15px 0; /* Spacing between inputs */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #3498db; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #3498db; /* Primary button color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start transparent */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+    }
+}
+
 
   /* Gallery styling */
   .hotel-gallery {
