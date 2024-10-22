@@ -365,6 +365,7 @@ button:hover {
 
 
   /* FOOTER */
+
   .footer {
     background-color: #2C3E50; /* Dark background color */
     color: #ECF0F1; /* Light text color */
@@ -395,12 +396,17 @@ button:hover {
 
 .social-media {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
-.social-media img {
-    width: 24px; /* Set icon size */
-    height: 24px; /* Set icon size */
+.social-media a {
+    color: #ECF0F1; /* Icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #f39c12; /* Hover color */
 }
 
 .footer-bottom {
@@ -413,6 +419,5 @@ button:hover {
     color: #ECF0F1;
     text-decoration: underline;
 }
-
 
   /* FOOTER ENDE */
