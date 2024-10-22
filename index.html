@@ -6,133 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon Hotel Management</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-
-        /* Header Animation */
-.animate {
-    opacity: 0;
-    transition: opacity 0.6s ease-out; /* Only animate opacity for smoother effect */
-    z-index: 3;
-  }
-  
-  /* Sticky Navigation styling */
-  nav {
-    position: fixed; /* Keeps the navbar at the top */
-    top: 0;
-    width: 80%;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure navbar is above other elements */
-    transition: top 0.3s; /* Smooth transition for hide/show */
-    background-color: #00497794; /* Semi-transparent background */
-    margin: 0 auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-
-  
-
-    nav.hidden {
-        top: -200px; /* Navigation hidden */
-    }
-    /* Popup styling */
-    .popup {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-        padding: 20px;
-        background-color: white;
-        border: 2px solid #ddd;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
-
-    .popup.active {
-        display: block;
-    }
-
-    .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-    }
-
-    .popup-overlay.active {
-        display: block;
-    }
-
-    .close-btn {
-        float: right;
-        cursor: pointer;
-        font-size: 18px;
-        color: #333;
-    }
-
-    /* Gallery styling */
-    .hotel-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .hotel-card {
-        flex-basis: 30%;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        text-align: center;
-        background-color: white;
-    }
-
-    .hotel-card img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 15px;
-    }
-
-    .hotel-card h3 {
-        margin: 10px 0;
-        font-size: 18px;
-    }
-
-    .hotel-card p {
-        margin: 5px 0;
-    }
-    </style>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="animate">
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <div class="flex-header">
-                        <a href=""><img class="logo2" src="img/hotelhorizon-logo.png" width="70px;" alt="">
-                            <div class="block-header">
-                                <h2 class="h2-header">Spa Hotel</h2>
-                                <h1 class="h1-header">Horizon</h1>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li><a href="#about">Über Uns</a></li>
-                <li><a href="#services">Unsere Angebote</a></li>
-                <li><a href="#rooms">Zimmerarten</a></li>
-                <li><a href="#hotels">Hotels</a></li>
-                <li><a href="#contact">Kontakt & Buchen</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li>
+                <div class="flex-header">
+                    <a href=""><img class="logo2" src="img/hotelhorizon-logo.png" width="70px;" alt="">
+                        <div class="block-header">
+                            <h2 class="h2-header">Spa Hotel</h2>
+                            <h1 class="h1-header">Horizon</h1>
+                        </div>
+                    </a>
+                </div>
+            </li>
+            <li><a href="#about">Über Uns</a></li>
+            <li><a href="#services">Unsere Angebote</a></li>
+            <li><a href="#rooms">Zimmerarten</a></li>
+            <li><a href="#hotels">Hotels</a></li>
+            <li><a href="#contact">Kontakt & Buchen</a></li>
+        </ul>
+    </nav>
+    <header class="animate"></header>
 
     <!-- About Section -->
     <section id="about" class="content">
@@ -149,6 +47,7 @@
     <section id="services" class="content">
         <div class="section-container">
             <h1 class="animate fade-left">Was wir anbieten</h1>
+            <div class="list-container">
             <ul class="animate fade-right">
                 <li>Gratis WLAN</li>
                 <li>Kostenlose Stornierung bis 24 Stunden vor Anreise</li>
@@ -160,6 +59,7 @@
                 <li>Parkplätze vor Ort verfügbar</li>
             </ul>
         </div>
+        </div>
         <div class="section-container">
             <img src="img/hotel-photo5.jpeg" alt="Our Services" class="animate fade-left">
         </div>
@@ -169,6 +69,8 @@
     <section id="rooms" class="content">
         <div class="section-container">
             <h1 class="animate fade-left">Unsere Zimmerarten</h1>
+            <div class="list-container">
+
             <ul class="animate fade-right">
                 <li>Deluxe Einzelzimmer - Mit großem Bett und Stadtblick</li>
                 <li>Doppelzimmer - Für zwei Personen mit Kingsize-Bett</li>
@@ -177,6 +79,8 @@
                 <li>Barrierefreies Zimmer - Speziell angepasst für Gäste mit eingeschränkter Mobilität</li>
             </ul>
         </div>
+    </div>
+
         <div class="section-container">
             <img src="img/hotel-photo8.jpeg" alt="Room Types" class="animate fade-left">
         </div>
@@ -254,15 +158,6 @@
             <button type="submit">Buchung abschicken</button>
         </form>
     </div>
-
-    <script>
-        
-  
-
-
-         
-
-    </script>
     <script src="script.js"></script>
 
 </body>
