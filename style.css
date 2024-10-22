@@ -494,7 +494,7 @@ button:hover {
 }
 
 .room-gallery img {
-    width: 100px; /* Thumbnail size */
+    width: 200px; /* Thumbnail size */
     height: auto;
     border-radius: 5px;
     transition: transform 0.3s ease;
