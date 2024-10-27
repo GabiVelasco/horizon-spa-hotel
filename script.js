@@ -18,10 +18,27 @@ const observer = new IntersectionObserver((entries) => {
 }, options);
 
 // Select all elements with the 'animate' class
-const animElements = document.querySelectorAll('.animate');
+const animElements = document.querySelectorAll('.animate, .animate1, .animate2, .animate3');
 
 // Observe each element with the 'animate' class
 animElements.forEach(el => observer.observe(el));
+
+// Function to show elements one after the other and keep them visible
+function showElementsSequentially(elements, delay) {
+  elements.forEach((element, index) => {
+    setTimeout(() => {
+      element.classList.add('visible'); // Show the current element
+    }, index * delay); // Delay based on index
+  });
+}
+
+// Call the function after the page has loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const textElements = document.querySelectorAll('.animate1, .animate2, .animate3');
+  showElementsSequentially(textElements, 2000); // 2000ms = 2 seconds between each
+});
+
+
 // ANIMATE ENTRANCE  ENDE
 
 // SCROLL UP NAVBAR
