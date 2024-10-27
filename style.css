@@ -608,12 +608,18 @@ button:hover {
   justify-content: center;
   align-items: center;
   z-index: 1000; /* Higher than other elements */
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .popup-image {
   max-width: 90%; /* Limit the image width */
   max-height: 90%; /* Limit the image height */
   object-fit: contain;
+  margin: 20px auto;
+  display:block;
+  align-self: center;
+  justify-content: center;
 }
 
 /* Close button styles */
@@ -684,6 +690,7 @@ button:hover {
   font-size: 30px;
   color: white;
   cursor: pointer;
+  margin: 20px;
 }
 
 .arrow.left {
@@ -701,6 +708,7 @@ button:hover {
   font-size: 40px;
   color: white;
   cursor: pointer;
+  margin: 20px;
 }
 
 
