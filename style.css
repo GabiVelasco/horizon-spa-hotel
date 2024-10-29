@@ -491,7 +491,7 @@ button:hover {
   /*Optional:;
   roundedcornersforacard-likeeffect*/box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   /*Lightshadowsimilartohotel-card*/text-align: left;
-   /* Center content for visual consistency */:;
+   /* Center content for visual consistency */
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -947,7 +947,7 @@ button:hover {
 
   .section-container img {
     max-width: 90%;
-    min-width: 450px;
+    min-width: 300px;
     height: auto;
     border-radius: 8px;
     text-align: center;
