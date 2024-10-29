@@ -140,7 +140,7 @@ nav ul li:hover {
 }
 
 .h1-header {
-  margin: 0;
+  margin: 0 auto;
   font-size: 24px;
   color: #ffffff;
 }
@@ -175,21 +175,41 @@ nav ul li:hover {
 .content h1 {
   font-size: 28px;
   color: #004a77;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 .content p {
   font-size: 18px;
   line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+p {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Image Styling */
 .section-container img {
   max-width: 70%;
+  min-width: 50%;
   height: auto;
   border-radius: 8px;
+  text-align: center;
   margin: 0 auto;
   display: block;
   align-items: center;
+  justify-content: center;
 }
 
 /* Map Styling */
@@ -868,6 +888,18 @@ button:hover {
     padding: 0;
     top: 0;
     z-index: 2;
+  }
+
+  .section-container img {
+    max-width: 90%;
+    min-width: 700px;
+    height: auto;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* DROPDOWN MENU  ENDE*/
