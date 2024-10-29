@@ -277,7 +277,17 @@ function changeImage(direction) {
 /* DROPDOWN MENU */
 
 function toggleMenu() {
-    var menu = document.querySelector("#navbar ul");
-    menu.classList.toggle("show");
+  const menu = document.querySelector("#navbar ul");
+  menu.classList.toggle("show");
 }
+
+// Füge Event-Listener für Links hinzu, um das Menü bei Klick zu schließen
+document.querySelectorAll("#navbar ul li a").forEach(link => {
+  link.addEventListener("click", function() {
+      if (window.innerWidth < 1300) {
+          document.querySelector("#navbar ul").classList.remove("show");
+      }
+  });
+});
+
 /* DROPDOWN MENU  ENDE*/
