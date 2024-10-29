@@ -42,22 +42,33 @@ document.addEventListener('DOMContentLoaded', () => {
 // ANIMATE ENTRANCE  ENDE
 
 // SCROLL UP NAVBAR
-let lastScrollTop = 0; // Variable to hold the last scroll position
+let lastScrollTop = 0;
 const navbar = document.querySelector('nav');
 
 window.addEventListener('scroll', function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop; // Get current scroll position
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScroll > lastScrollTop) {
-        // Scrolling down
-        navbar.style.top = '-100px'; // Hide the navbar (adjust the value if needed)
+    // Prüfe, ob die Bildschirmbreite kleiner als 1300px ist
+    if (window.innerWidth < 1300) {
+        if (currentScroll > lastScrollTop) {
+            // Beim Runterscrollen
+            navbar.style.top = '-210px'; // Versteckt die Navbar weiter als -100px
+        } else {
+            // Beim Hochscrollen
+            navbar.style.top = '0';
+        }
     } else {
-        // Scrolling up
-        navbar.style.top = '0'; // Show the navbar
+        // Standardverhalten für größere Bildschirme
+        if (currentScroll > lastScrollTop) {
+            navbar.style.top = '-100px';
+        } else {
+            navbar.style.top = '0';
+        }
     }
-    
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
+
 // SCROLL UP NAVBAR ENDE
 
 // BOOKING POPUP
