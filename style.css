@@ -191,13 +191,7 @@ nav ul li:hover {
   align-items: center;
   justify-content: center;
 }
-p {
-  text-align: center;
-  margin: 0 auto;
-  display: block;
-  align-items: center;
-  justify-content: center;
-}
+
 
 /* Image Styling */
 .section-container img {
@@ -892,7 +886,7 @@ button:hover {
 
   .section-container img {
     max-width: 90%;
-    min-width: 700px;
+    min-width: 450px;
     height: auto;
     border-radius: 8px;
     text-align: center;
