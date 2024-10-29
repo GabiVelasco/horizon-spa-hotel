@@ -844,5 +844,21 @@ button:hover {
     -ms-transform: scale(1.05);
     -o-transform: scale(1.05);
   }
+
+  header {
+    background:url("img/exotic-spa_optimized.jpg");
+    background-size: cover;
+    color: white;
+    max-height: 900px;
+    min-height: 500px;
+    height: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    top: 0;
+    z-index: 2;
+  }
 }
 /* DROPDOWN MENU  ENDE*/
