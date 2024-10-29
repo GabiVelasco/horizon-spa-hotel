@@ -147,18 +147,24 @@ nav ul li:hover {
 
 /* Section Styling */
 .section-container {
-  max-width: 1000px;
-  margin: 40px auto;
+  max-width: 80%;
   padding: 20px;
   text-align: center;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Section Styling */
 .list-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 900px;
+  padding: 10px;
   text-align: left;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
 .list-container li {
@@ -178,9 +184,12 @@ nav ul li:hover {
 
 /* Image Styling */
 .section-container img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
 }
 
 /* Map Styling */
