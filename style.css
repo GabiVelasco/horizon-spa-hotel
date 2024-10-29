@@ -88,8 +88,18 @@ nav ul li a {
   margin-right: 15px;
 }
 
+.logo-link {
+  margin-right: 15px;
+  text-decoration: none;
+}
+.logo-link-small {
+  margin-right: 15px;
+  text-decoration: none;
+  display: none;
+}
+
 .h2-header {
-  margin: 0;
+  margin: 5px;
   font-size: 14px;
   color: #ffffff;
 }
@@ -221,7 +231,7 @@ nav {
 }
 
   nav.hidden {
-      top: -300px; /* Navigation hidden */
+      top: -330px; /* Navigation hidden */
   }
 
 /* Popup styling */
@@ -713,3 +723,56 @@ button:hover {
 
 
 /* HOTEL GALLERY ENDE */
+
+/* DROPDOWN MENU */
+
+/* Default Navbar Styles */
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/* Dropdown Button Styling */
+.dropdown-btn {
+  display: none;
+  background-color: transparent;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles for screens smaller than 1300px */
+@media (max-width: 1300px) {
+  #navbar ul {
+      display: none; /* Hide menu by default */
+      flex-direction: column; /* Stack menu items vertically */
+      text-align: left;
+      justify-content:left;
+
+  }
+  .dropdown-btn {
+      display: block; /* Show the dropdown button */
+      text-align: left;
+      justify-content:left;
+  }
+  #navbar ul.show {
+      display: flex; /* Show menu when 'show' class is added */
+      text-align: left;
+      justify-content:left;
+      align-items: flex-start;
+      margin: 5px;
+      padding: 5px;
+  }
+
+  .logo-link {
+    display: none;
+    margin-right: 15px;
+  }
+
+  .logo-link-small {
+    margin: 15px;
+    text-decoration: none;
+    display: block;
+  }
+}
+/* DROPDOWN MENU  ENDE*/

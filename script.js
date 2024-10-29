@@ -260,3 +260,13 @@ function changeImage(direction) {
 }
 
 // POPUP GALLLERY ENDE
+
+
+
+/* DROPDOWN MENU */
+
+function toggleMenu() {
+    var menu = document.querySelector("#navbar ul");
+    menu.classList.toggle("show");
+}
+/* DROPDOWN MENU  ENDE*/
