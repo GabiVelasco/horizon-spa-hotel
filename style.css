@@ -64,7 +64,42 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  transition: transform 0.3s ease;
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  display: block;
 }
+
+nav ul li a:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+nav ul li{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+
 
 .list-container li { 
 	list-style-type:none;
@@ -85,7 +120,7 @@ nav ul li a {
 }
 
 .logo2 {
-  margin-right: 15px;
+  margin: 10px;
 }
 
 .logo-link {
@@ -773,6 +808,41 @@ button:hover {
     margin: 15px;
     text-decoration: none;
     display: block;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  nav ul li{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .logo-link-small{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+  }
+  
+  .logo-link-small:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
   }
 }
 /* DROPDOWN MENU  ENDE*/
