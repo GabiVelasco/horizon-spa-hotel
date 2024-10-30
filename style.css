@@ -995,5 +995,25 @@ button:hover {
   font-size: 1.0em !important;
   margin: 10px auto;
 }
+
+.list-container {
+  max-width: 95%;
+  padding: 0px;
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-container ul{
+  max-width: 100%;
+  padding: 0px;
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
 }
 /* DROPDOWN MENU  ENDE*/
