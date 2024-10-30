@@ -2,7 +2,7 @@
 
 # Hotel Spa Horizon
 
-Hotel Spa Horizon is a fully responsive website designed to showcase the hotel’s luxurious spa, rooms, and amenities. The site offers an elegant, immersive browsing experience with smooth animations and interactive elements.
+Hotel Spa Horizon is a fully responsive website designed to showcase the hotel’s luxurious spa, rooms, and amenities and booking options. The site offers an elegant, immersive browsing experience with smooth animations and interactive elements.
 
 ## Summary
 
