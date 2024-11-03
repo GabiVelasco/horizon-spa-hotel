@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Reorder items
       setTimeout(() => {
           items[0].style.transform = 'translateY(200%)'; // Move first to bottom
-          items[0].style.opacity = '0.5'; // Hide the first item
+          items[0].style.opacity = '0'; // Hide the first item
           items[1].style.opacity = '1'; // Show middle item
       }, 1500); // Delay for the transition duration
 
@@ -324,5 +324,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   rotateItems(); // Start rotating items
 });
+
 
 /* CAROUSEL TEXT IN ABOUT SECTION ENDE */

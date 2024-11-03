@@ -1023,12 +1023,13 @@ button:hover {
 /* Carousel container */
 .carousel-text {
   position: relative;
-  height: 6em; /* Set to fit three lines comfortably */
+  height: 9em; /* Set to fit three lines comfortably */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 10px auto;
 }
 
 /* Carousel item */
