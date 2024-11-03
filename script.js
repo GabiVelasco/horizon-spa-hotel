@@ -291,3 +291,38 @@ document.querySelectorAll("#navbar ul li a").forEach(link => {
 });
 
 /* DROPDOWN MENU  ENDE*/
+
+
+/* CAROUSEL TEXT IN ABOUT SECTION */
+document.addEventListener("DOMContentLoaded", function() {
+  const items = document.querySelectorAll('.carousel-item');
+  
+  // Position items offscreen to start
+  items[0].style.transform = 'translateY(0%)';  // Start in center
+  items[1].style.transform = 'translateY(100%)'; // Start below
+  items[2].style.transform = 'translateY(200%)'; // Start below the second
+
+  // Function to rotate items
+  const rotateItems = () => {
+      const firstItem = items[0];
+      firstItem.style.transform = 'translateY(-100%)'; // Move to top
+
+      // Move the items
+      items[1].style.transform = 'translateY(0%)'; // Middle goes to center
+      items[2].style.transform = 'translateY(100%)'; // Last moves up
+
+      // Reorder items
+      setTimeout(() => {
+          items[0].style.transform = 'translateY(200%)'; // Move first to bottom
+          items[0].style.opacity = '0.5'; // Hide the first item
+          items[1].style.opacity = '1'; // Show middle item
+      }, 1500); // Delay for the transition duration
+
+      // Loop the rotation
+      setTimeout(rotateItems, 9000); // Total time for one rotation cycle
+  };
+
+  rotateItems(); // Start rotating items
+});
+
+/* CAROUSEL TEXT IN ABOUT SECTION ENDE */
