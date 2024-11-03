@@ -13,6 +13,7 @@ body {
 .blue p {
   color:#47B0D2;
   font-weight: bolder; 
+  font-size: 1.2em !important;
 }
 
 .bluep {
@@ -1029,7 +1030,9 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px auto;
+  margin: 20px auto;
+  font-size: 1.2em !important;
+
 }
 
 /* Carousel item */
@@ -1038,8 +1041,13 @@ button:hover {
   position: absolute;
   width: 100%;
   text-align: center;
-  opacity: 0; /* Start with opacity 0 */
-  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
+  opacity: 0;
+  /*Startwithopacity0*/transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  height: 40px;
+  -webkit-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
+  -moz-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
+  -ms-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
+  -o-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
 }
 
 /* Circular motion keyframes */
@@ -1051,13 +1059,13 @@ button:hover {
   }
   33%, 53% {
       transform: translateY(100%); /* Moves to bottom position */
-      opacity: 0.5; /* Not visible */
-      font-size: 1em;
+      opacity: 0; /* Not visible */
+      font-size: 1.2em;
   }
   66%, 86% {
       transform: translateY(-100%); /* Moves to top position */
-      opacity: 0.5; /* Not visible */
-      font-size: 1em;
+      opacity: 0; /* Not visible */
+      font-size: 1.2em;
   }
   100% {
       transform: translateY(0); /* Back to center */
