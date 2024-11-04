@@ -1019,35 +1019,38 @@ button:hover {
 }
 /* DROPDOWN MENU  ENDE*/
 
-
 /* CAROUSEL TEXT IN ABOUT SECTION */
 /* Carousel container */
 .carousel-text {
   position: relative;
-  height: 9em; /* Set to fit three lines comfortably */
+  height: 6em; /* Set to fit three lines comfortably */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
+  margin: 0px auto;
   font-size: 1.2em !important;
-
+  color: #004977d2;
+  padding: 20px;
 }
 
 /* Carousel item */
 .carousel-item {
+  color: #004977d2;
+  margin: 0px auto;
   font-size: 1.2em;
   position: absolute;
   width: 100%;
   text-align: center;
   opacity: 0;
-  /*Startwithopacity0*/transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+  /* Start with opacity 0 */
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
   height: 40px;
-  -webkit-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
-  -moz-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
-  -ms-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
-  -o-transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out, font-size 1.5s ease-in-out;
+  -webkit-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
+  -moz-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
+  -ms-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
+  -o-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
 }
 
 /* Circular motion keyframes */
@@ -1076,18 +1079,23 @@ button:hover {
 
 /* Apply animation to all items with delays */
 .carousel-item:nth-child(1) {
-  animation: circularCarousel 9s infinite;
-  animation-delay: 0s; /* No delay for the first item */
+  animation: circularCarousel 12s infinite;
+  animation-delay: 0s;
+  -webkit-animation: circularCarousel 12s infinite;
 }
 .carousel-item:nth-child(2) {
-  animation: circularCarousel 9s infinite;
-  animation-delay: 3s; /* Offset by 1/3 cycle */
+  animation: circularCarousel 12s infinite;
+  animation-delay: 4s; /* Offset by 1/3 cycle */
 }
 .carousel-item:nth-child(3) {
-  animation: circularCarousel 9s infinite;
-  animation-delay: 6s; /* Offset by 2/3 cycle */
+  animation: circularCarousel 12s infinite;
+  animation-delay: 8s; /* Offset by 2/3 cycle */
 }
 
-
+.box-about {
+  min-height: fit-content;
+  height: 200px;
+  padding: 20px;
+  color: #004977d2;
+}
 /* CAROUSEL TEXT IN ABOUT SECTION ENDE */
-
