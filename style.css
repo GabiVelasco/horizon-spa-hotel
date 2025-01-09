@@ -10,15 +10,22 @@ body {
   color: #333;
 
 }
-.blue p {
-  color:#47B0D2;
+.blue p{
+  color:#006666;
   font-weight: bolder; 
   font-size: 1.2em !important;
+  
 }
 
 .bluep {
-  color:#47B0D2;
+  color:#006666;
   font-weight: bolder; 
+  color: linear-gradient(to bottom, #004c4c, #006666, #008080, #66b2b2, #083b3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: linear-gradient(to bottom, #004c4c, #006666, #008080, #66b2b2, #083b3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;;
 }
 
 html {
@@ -28,7 +35,7 @@ html {
 }
 /* DROPDOWN MENU  ENDE*/
 .gradient-text {
-  background: linear-gradient(to bottom, #004c4c, #006666, #008080, #66b2b2, #b2d8d8);
+  background: linear-gradient(to bottom, #004c4c, #006666, #008080, #66b2b2, #083b3b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
