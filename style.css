@@ -26,6 +26,60 @@ html {
   padding: 0;
 
 }
+/* DROPDOWN MENU  ENDE*/
+.gradient-text {
+  background: linear-gradient(to bottom, #004c4c, #006666, #008080, #66b2b2, #b2d8d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* CAROUSEL TEXT IN ABOUT SECTION */
+/* Carousel container */
+.carousel-text {
+  position: relative;
+  height: 6em; /* Set to fit three lines comfortably */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  font-size: 1.2em !important;
+  
+  color: linear-gradient(to bottom, 
+  #004c4c, /* Darkest */
+  #006666, 
+  #008080, 
+  #66b2b2, 
+  #b2d8d8 /* Lightest */
+);  padding: 20px;
+  z-index: 7000;
+}
+
+/* Carousel item */
+.carousel-item {
+  z-index: 7000;
+  color: linear-gradient(to bottom, 
+  #004c4c, /* Darkest */
+  #006666, 
+  #008080, 
+  #66b2b2, 
+  #b2d8d8 /* Lightest */
+);
+
+  margin: 0px auto;
+  font-size: 2.4em;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  /* Start with opacity 0 */
+  transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+  height: 40px;
+  -webkit-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
+  -moz-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
+  -ms-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
+  -o-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
+}
 
 header {
   background:url("img/exotic-spa_optimized.jpg");
@@ -398,7 +452,7 @@ nav {
 }
 
   nav.hidden {
-      top: -330px; /* Navigation hidden */
+      top: -7300px !important; /* Navigation hidden */
   }
 
 /* Popup styling */
@@ -1151,7 +1205,15 @@ button:hover {
 }
 }
 /* DROPDOWN MENU  ENDE*/
-
+.gradient-box {
+  color: linear-gradient(to bottom, 
+  #004c4c, /* Darkest */
+  #006666, 
+  #008080, 
+  #66b2b2, 
+  #b2d8d8 /* Lightest */
+);
+}
 /* CAROUSEL TEXT IN ABOUT SECTION */
 /* Carousel container */
 .carousel-text {
@@ -1164,15 +1226,30 @@ button:hover {
   justify-content: center;
   margin: 0px auto;
   font-size: 1.2em !important;
-  color: #004977d2;
-  padding: 20px;
+  
+  color: linear-gradient(to bottom, 
+  #004c4c, /* Darkest */
+  #006666, 
+  #008080, 
+  #66b2b2, 
+  #b2d8d8 /* Lightest */
+);  padding: 20px;
+  z-index: 7000;
 }
 
 /* Carousel item */
 .carousel-item {
-  color: #004977d2;
+  z-index: 7000;
+  color: linear-gradient(to bottom, 
+  #004c4c, /* Darkest */
+  #006666, 
+  #008080, 
+  #66b2b2, 
+  #b2d8d8 /* Lightest */
+);
+
   margin: 0px auto;
-  font-size: 1.2em;
+  font-size: 2.4em;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -1229,6 +1306,12 @@ button:hover {
   min-height: fit-content;
   height: 400px;
   padding: 20px;
-  color: #004977d2;
+  color: linear-gradient(to bottom, 
+  #004c4c, /* Darkest */
+  #006666, 
+  #008080, 
+  #66b2b2, 
+  #b2d8d8 /* Lightest */
+);  z-index: 7000;
 }
 /* CAROUSEL TEXT IN ABOUT SECTION ENDE */
