@@ -245,7 +245,7 @@ nav ul li:hover {
 
 .list-container li { 
 	list-style-type:none;
-  color:#47B0D2;
+  color:#1b727e;
   font-weight: bolder; 
 }
 
@@ -316,7 +316,7 @@ nav ul li:hover {
 .list-container {
   max-width: 900px;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   display: block;
   align-items: center;
@@ -1194,7 +1194,7 @@ button:hover {
 .list-container {
   max-width: 95%;
   padding: 0px;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   display: block;
   align-items: center;
@@ -1204,7 +1204,7 @@ button:hover {
 .list-container ul{
   max-width: 100%;
   padding: 0px;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   display: block;
   align-items: center;
