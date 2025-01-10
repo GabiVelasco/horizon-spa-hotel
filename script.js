@@ -105,7 +105,10 @@ const rooms = {
       description: "Mit großem Bett und Stadtblick (max. 1 Person)",
       basePrice: 120,
       cityViewCost: 20,
-      images: ["img/deluxe-einzelzimmer1.jpg", "img/deluxe-einzelzimmer2.jpg"],
+      images: ["img/deluxe-einzelzimmer1.jpg"
+        , 
+        // "img/deluxe-einzelzimmer2.jpg"
+      ],
       maxGuests: 1,
   },
   "doppelzimmer": {
@@ -113,7 +116,9 @@ const rooms = {
       description: "Für zwei Personen",
       basePrice: 180,
       cityViewCost: 20,
-      images: ["img/doppelzimmer1.jpg", "img/doppelzimmer2.jpg"],
+      images: ["img/doppelzimmer1.jpg",
+        //  "img/doppelzimmer2.jpg"
+        ],
       maxGuests: 2,
   },
   "familienzimmer": {
@@ -121,7 +126,9 @@ const rooms = {
       description: "Platz für bis zu 6 Personen, mit separatem Wohnbereich",
       basePrice: 220,
       cityViewCost: 20,
-      images: ["img/familienzimmer1.jpg", "img/familienzimmer2.jpg"],
+      images: ["img/familienzimmer1.jpg", 
+        // "img/familienzimmer2.jpg"
+      ],
       maxGuests: 6,
   },
   "suite": {
@@ -129,7 +136,9 @@ const rooms = {
       description: "Luxuriöse Ausstattung mit Whirlpool und privatem Balkon (bis 4 Personen)",
       basePrice: 300,
       cityViewCost: 20,
-      images: ["img/suite1.jpg", "img/suite2.jpg", "img/suite3.jpg"],
+      images: ["img/suite1.jpg", 
+        // "img/suite2.jpg", "img/suite3.jpg"
+      ],
       maxGuests: 4,
   },
   "barrierefreies-zimmer": {
@@ -137,7 +146,9 @@ const rooms = {
       description: "Speziell angepasst für Gäste mit eingeschränkter Mobilität (bis 5 Personen)",
       basePrice: 150,
       cityViewCost: 20,
-      images: ["img/barrierefreies-zimmer1.jpg", "img/barrierefreies-zimmer2.jpg"],
+      images: ["img/barrierefreies-zimmer1.jpg", 
+        // "img/barrierefreies-zimmer2.jpg"
+      ],
       maxGuests: 5,
   },
 };
