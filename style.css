@@ -4,10 +4,20 @@
 }
 
 body {
+  /* background:url("img/spa-symbol2.png"); */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #5dafbe8e;
+  background-size:cover;
+  background-repeat:no-repeat;
+  height: 300px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: rgb(93, 163, 142);
+  background-color: rgba(184, 255, 231, 0.808), 0.24;
+
 
 }
 .blue p{
@@ -31,6 +41,7 @@ body {
 html {
   margin: 0;
   padding: 0;
+  color: rgba(124, 168, 155, 0.479);
 
 }
 /* DROPDOWN MENU  ENDE*/
@@ -51,7 +62,6 @@ html {
   justify-content: center;
   margin: 0px auto;
   font-size: 1.2em !important;
-  
   color: linear-gradient(to bottom, 
   #004c4c, /* Darkest */
   #006666, 
@@ -88,6 +98,10 @@ html {
   -o-transition: transform 2s ease-in-out, opacity 2s ease-in-out, font-size 2s ease-in-out;
 }
 
+.hohe-index {
+  z-index: 8000;
+}
+
 header {
   background-size: cover;
   color: white;
@@ -108,7 +122,6 @@ header {
   background:url("img/hero-video.mp4");
   background-size: cover;
   color: white;
-
   height: 300px;
   margin: 0 auto;
   justify-content: center;
@@ -121,7 +134,7 @@ header {
 
 header {
   position: relative;
-  height: 300px;
+  height: 700px;
   margin: 0 auto;
   justify-content: center;
   text-align: center;
@@ -138,7 +151,7 @@ header {
   left: 0;
   width: 100%;
   max-width: 100%;
-  height: 300px;
+  height: 700px;
   object-fit: cover;
   z-index: 1; /* Behind the content */
 
@@ -146,7 +159,7 @@ header {
 
 header.animate {
   position: relative;
-  height: 300px;
+  height: 700px;
   margin: 0 auto;
   overflow: hidden; /* Ensure video doesn't overflow the header */
 }
@@ -160,13 +173,13 @@ header.animate {
   height: 100%;
   object-fit: cover;
   z-index: 1; /* Behind the content */
-  height: 188px;
+  height: 700px;
 
 }
 
 .hero-content {
   position: relative;
-  z-index: 2; /* Above the video */
+  z-index: 2000; /* Above the video */
   color: white;
   height: 200px;
 
@@ -186,7 +199,7 @@ header.animate {
   justify-content: center;
   text-align: center;
   align-items: center;
-  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.986);
+  /* text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.986); */
 
 }
 
@@ -195,7 +208,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding:10px;
+  padding:20px;
   margin: 0 auto;
   list-style-type: none;
 
@@ -203,15 +216,16 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: rgba(47, 100, 78, 0.911);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   transition: transform 0.3s ease;
   -webkit-transition: transform 0.3s ease;
   -moz-transition: transform 0.3s ease;
   -ms-transition: transform 0.3s ease;
   -o-transition: transform 0.3s ease;
   display: block;
+  font-weight: bolder;
 }
 
 nav ul li a:hover {
@@ -242,11 +256,19 @@ nav ul li:hover {
 }
 
 
-
+.list-container h1  { 
+	list-style-type:none;
+  font-weight: bolder; 
+  font-size: 22px !important;
+  text-align:center;
+  padding: 10px;
+}
 .list-container li { 
 	list-style-type:none;
   color:#1b727e;
   font-weight: bolder; 
+  padding: 0px;
+  text-align:center;
 }
 
 .list-container i { 
@@ -254,6 +276,8 @@ nav ul li:hover {
   color:#47B0D2;
   font-weight: bolder; 
   padding: 10px;
+  font-size: 12px;
+  
 }
 
 .flex-header {
@@ -288,6 +312,8 @@ nav ul li:hover {
   font-size: 24px;
   color: #ffffff;
   text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.504);
+  text-align: center;
+
 
 }
 
@@ -314,9 +340,9 @@ nav ul li:hover {
 
 /* Section Styling */
 .list-container {
-  max-width: 900px;
-  padding: 10px;
-  text-align: center;
+width: 100%;
+padding: 0px;
+text-align: center;
   margin: 0 auto;
   display: block;
   align-items: center;
@@ -458,9 +484,6 @@ nav {
 
 }
 
-  nav.hidden {
-      top: -7300px !important; /* Navigation hidden */
-  }
 
 /* Popup styling */
 .popup {
@@ -1090,7 +1113,7 @@ button:hover {
 
   header {
     position: relative;
-    height: 400px;
+    height: 700px;
     margin: 0 auto;
     justify-content: center;
     text-align: center;
@@ -1107,8 +1130,8 @@ button:hover {
     left: 0;
     width: 100%;
     max-width: 100%;
-    height: 400px;
-    object-fit: cover;
+    height: 700px;
+    object-fit: contain;
     z-index: 1; /* Behind the content */
 
   }
@@ -1127,8 +1150,8 @@ button:hover {
     left: 0;
     width: 100%;
     max-width: 100%;
-    height: 285px;
-    object-fit: cover;
+    height: 1000px;
+    object-fit:contain;
     z-index: 1; /* Behind the content */
    
   }
@@ -1153,7 +1176,7 @@ button:hover {
   }
 
   .section-container {
-    max-width: 90%;
+    width: 100%;
     padding: 10px;
     text-align: center;
     margin: 0 auto;
@@ -1192,7 +1215,7 @@ button:hover {
 }
 
 .list-container {
-  max-width: 95%;
+  width: 100%;
   padding: 0px;
   text-align: center;
   margin: 0 auto;
@@ -1210,6 +1233,19 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+
+
+.carousel-text {
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-size: clamp(1.0em, 5vw, 3.2em) !important;
+  color: white !important;
+}
+
+
 }
 /* DROPDOWN MENU  ENDE*/
 .gradient-box {
@@ -1322,3 +1358,84 @@ button:hover {
 );  z-index: 7000;
 }
 /* CAROUSEL TEXT IN ABOUT SECTION ENDE */
+
+
+nav.hidden {
+  top: -7300px !important; /* Navigation hidden */
+  display:none;
+}
+
+#navbar.hidden {
+top: -7300px !important; /* Navigation hidden */
+
+}
+
+nav ul.hidden {
+
+top: -7300px !important; /* Navigation hidden */
+
+
+}
+
+.hero-video {
+  position: relative;
+}
+
+#hero-video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 2; /* Certifique-se de que o conteúdo fique acima do vídeo */
+}
+
+.carousel-text {
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-size: clamp(0.7em, 5vw, 2.5em) !important;
+  color: white !important;
+}
+
+
+
+.carousel-text p{
+ 
+
+  color: white ! important;
+}
+
+.list-container ul {
+  font-size: 18px;
+
+}
+
+
+.list-container h1 {
+  font-size: 42px;
+
+}
+
+
+
+.list-container h1  { 
+	list-style-type:none;
+  font-weight: bolder; 
+  font-size: 80px !important;
+  text-align:center;
+  padding: 50px;
+}

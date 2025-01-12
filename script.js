@@ -52,7 +52,7 @@ window.addEventListener('scroll', function() {
     if (window.innerWidth < 1300) {
         if (currentScroll > lastScrollTop) {
             // Beim Runterscrollen
-            navbar.style.top = '-210px'; // Versteckt die Navbar weiter als -100px
+            navbar.style.top = '-2100px'; // Versteckt die Navbar weiter als -100px
         } else {
             // Beim Hochscrollen
             navbar.style.top = '0';
@@ -60,7 +60,7 @@ window.addEventListener('scroll', function() {
     } else {
         // Standardverhalten für größere Bildschirme
         if (currentScroll > lastScrollTop) {
-            navbar.style.top = '-100px';
+            navbar.style.top = '-1000px';
         } else {
             navbar.style.top = '0';
         }
@@ -284,7 +284,6 @@ function changeImage(direction) {
 // POPUP GALLLERY ENDE
 
 
-
 /* DROPDOWN MENU */
 
 function toggleMenu() {
@@ -338,3 +337,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /* CAROUSEL TEXT IN ABOUT SECTION ENDE */
+
+
+// Exibe o conteúdo antes do vídeo
+const carouselText = document.getElementById('hero-content');
+const video = document.getElementById('hero-video');
+
+// Inicialmente, ocultar o vídeo
+video.style.display = 'block';
+
+// Exibir o conteúdo
+carouselText.classList.add('show');
+
+// Função para exibir o vídeo após um tempo (ajuste o tempo conforme necessário)
+setTimeout(() => {
+  // Esconde o conteúdo e mostra o vídeo
+  carouselText.style.display = 'none';
+  video.style.display = 'block';
+}, 5000); // 5000ms = 5 segundos de espera antes de mostrar o vídeo
