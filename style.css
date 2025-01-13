@@ -1442,7 +1442,7 @@ top: -7300px !important; /* Navigation hidden */
 .hero-video {
   position: relative;
   width: 100%; /* Full width */
-  height: 800px;
+  height: 900px;
   overflow: hidden; /* Prevent any overflow */
 
 }
@@ -1482,7 +1482,7 @@ top: -7300px !important; /* Navigation hidden */
     margin-top: 0 !important;
     padding-top: 0 !important;
     overflow: hidden; /* Prevent any overflow */
-    height: 800px;
+    height: 900px;
 
   }
 
