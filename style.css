@@ -1505,7 +1505,7 @@ top: -7300px !important; /* Navigation hidden */
 }
 
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 720px) {
 
   ul, li {
     justify-content: left !important;
