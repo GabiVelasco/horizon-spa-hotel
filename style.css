@@ -330,8 +330,8 @@ nav ul li:hover {
 }
 /* Section Styling */
 .section-container {
-  max-width: 80%;
-  padding: 20px;
+  max-width: 90%;
+  padding: 10px;
   text-align: center;
   margin: 0 auto;
   display: block;
@@ -1498,7 +1498,7 @@ top: -7300px !important; /* Navigation hidden */
     justify-content: center;
     text-align: center;
     align-items: center;
-    max-height: 
+    
 
 
   }
